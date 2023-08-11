@@ -1,11 +1,11 @@
 // 'use client'
 
 import './globals.css'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
+// const google = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -15,13 +15,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <div className="">
-        <body className="flex flex-col justify-between min-h-screen">
-          <Header />
-          <main>{children}</main>
-          <Footer />
-        </body>
-      </div>
+      <body className="flex flex-col justify-between min-h-screen">
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }
