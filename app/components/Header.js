@@ -69,9 +69,24 @@ const NavBar = () => {
         </div>
 
         {/* Navbar 2 */}
-        <div className="h-[5rem] bg-blue-900 mt-8">
-          <div className="">
-            
+        <div className="h-[5rem] bg-blue-800 mt-8">
+          <div className="pt-6 flex justify-evenly">
+            <Link href="/" className="">
+              <h1 className="text-white text-sm capitalize font-bold md:text-xl">
+                south akim rural bank
+              </h1>
+            </Link>
+            <div className="">
+              <ul className="flex gap-5 text-white items-center">
+                <li className="flex">products and services</li>
+                <li className="">ways to bank</li>
+                <li className="">security and safety</li>
+              </ul>
+            </div>
+            <div className="flex gap-10">
+              {/* TODO: search icon */} search
+              {/* <div className="flex w-[15rem] h-[5rem] bg-blue-300"></div> */}
+            </div>
           </div>
         </div>
       </div>
