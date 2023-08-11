@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <div className="">
-        <body className="">
+        <body className="flex flex-col justify-between min-h-screen">
           <Header />
           <main>{children}</main>
           <Footer />
