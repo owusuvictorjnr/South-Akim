@@ -7,9 +7,9 @@ import React from 'react'
 const NavBar = () => {
   return (
     <>
-      <div className="fixed top-0 left-0 right-0">
+      <div className="fixed z-20 top-0 left-0 right-0">
         {/* Nav bar 1 */}
-        <div className="h-[2rem] bg-white">
+        <div className="h-[5rem] bg-white">
           <div className="flex justify-between text-sm mx-auto px-[5rem] pt-4 lg:flex lg:justify-evenly">
             <div className="px-5 capitalize md:px-0">
               <ul className="flex gap-2 lg:gap-10">
@@ -69,7 +69,7 @@ const NavBar = () => {
         </div>
 
         {/* Navbar 2 */}
-        <div className="h-[5rem] bg-blue-800 mt-8">
+        <div className="h-[5rem] bg-blue-800">
           <div className="pt-6 flex justify-evenly">
             <Link href="/" className="flex gap-3">
               <Image
