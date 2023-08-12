@@ -2,7 +2,11 @@ import React from 'react'
 
 const Root = () => {
   return (
-    <div>Root</div>
+    <>
+      <div className="mt-[10rem]">
+        <div>Root</div>
+      </div>
+    </>
   )
 }
 
