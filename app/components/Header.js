@@ -7,7 +7,7 @@ import React from 'react'
 const NavBar = () => {
   return (
     <>
-      <div className="">
+      <div className="fixed top-0 left-0 right-0">
         {/* Nav bar 1 */}
         <div className="h-[2rem] bg-white">
           <div className="flex justify-between text-sm mx-auto px-[5rem] pt-4 lg:flex lg:justify-evenly">
@@ -76,7 +76,7 @@ const NavBar = () => {
                 south akim rural bank
               </h1>
             </Link>
-            <div className="">
+            <div className="capitalize text-sm md:text-xl">
               <ul className="flex gap-5 text-white items-center">
                 <li className="flex">products and services</li>
                 <li className="">ways to bank</li>
