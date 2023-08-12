@@ -71,12 +71,19 @@ const NavBar = () => {
         {/* Navbar 2 */}
         <div className="h-[5rem] bg-blue-800 mt-8">
           <div className="pt-6 flex justify-evenly">
-            <Link href="/" className="">
-              <h1 className="text-white text-sm capitalize font-bold md:text-xl">
+            <Link href="/" className="flex gap-3">
+              <Image
+                src="/logo/logo.jpeg"
+                alt="logo"
+                height="1000"
+                width="1000"
+                className="h-[3rem] w-[3rem] rounded-full bg-blue-800"
+              />
+              <h1 className="text-white text-sm capitalize font-bold md:text-xl md:pt-2">
                 south akim rural bank
               </h1>
             </Link>
-            <div className="capitalize text-sm md:text-xl">
+            <div className="capitalize text-sm md:text-xl pt-2">
               <ul className="flex gap-5 text-white items-center">
                 <li className="flex">products and services</li>
                 <li className="">ways to bank</li>
