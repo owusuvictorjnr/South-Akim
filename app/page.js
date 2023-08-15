@@ -10,6 +10,8 @@ import { LiaHomeSolid } from 'react-icons/lia'
 import { BiCreditCard } from 'react-icons/bi'
 import { HiChartBar } from 'react-icons/hi'
 import { BsShieldCheck } from 'react-icons/bs'
+import { RxTriangleUp } from 'react-icons/rx'
+import { HiOutlineArrowUpRight } from 'react-icons/hi2'
 import Link from 'next/link'
 
 const slides = ['/imgs/agency.jpg', '/imgs/ebanking.jpg', '/imgs/pic6.jpg']
@@ -148,15 +150,129 @@ const Root = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 pt-10 lg:flex lg:justify-center">
-          <div className="container mx-auto px-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 px-5 mt-5 bg-blue-800">
+          <div className="flex justify-center container mx-auto px-5">
             <Image
               src="/imgs/ebanking.jpg"
               alt="ebanking"
               height="1000"
               width="1000"
-              className=""
+              className="h-[20rem] md:h-[26rem]"
             />
+          </div>
+
+          <div className="px-5 bg-blue-800 mx-5 text-white pt-10 pb-10">
+            <h1 className="uppercase">do it yourself</h1>
+
+            <ul className="pt-5">
+              <div className="flex gap-2">
+                <RxTriangleUp
+                  size={30}
+                  // color="orange"
+                  className="text-orange-500"
+                />
+                <li className="text-sm capitalize md:text-xl ">
+                  register for online and mobile banking
+                </li>
+              </div>
+
+              <div className="flex gap-2">
+                <RxTriangleUp
+                  size={30}
+                  // color="orange"
+                  className="text-orange-500"
+                />
+                <li className="text-sm capitalize md:text-xl ">
+                  register for online and mobile banking
+                </li>
+              </div>
+
+              <div className="flex gap-2">
+                <RxTriangleUp
+                  size={30}
+                  // color="orange"
+                  className="text-orange-500"
+                />
+                <li className="text-sm capitalize md:text-xl ">
+                  register for online and mobile banking
+                </li>
+              </div>
+
+              <div className="flex gap-2">
+                <RxTriangleUp
+                  size={30}
+                  // color="orange"
+                  className="text-orange-500"
+                />
+                <li className="text-sm capitalize md:text-xl ">
+                  register for online and mobile banking
+                </li>
+              </div>
+
+              <div className="flex gap-2">
+                <RxTriangleUp
+                  size={30}
+                  // color="orange"
+                  className="text-orange-500"
+                />
+                <li className="text-sm capitalize md:text-xl ">
+                  register for online and mobile banking
+                </li>
+              </div>
+
+              <div className="flex gap-2">
+                <RxTriangleUp
+                  size={30}
+                  // color="orange"
+                  className="text-orange-500"
+                />
+                <li className="text-sm capitalize md:text-xl ">
+                  register for online and mobile banking
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        {/* Quick links */}
+        <section className="uppercase font-bold mt-10 px-10 container md:pl-[8rem] lg:pl-[35rem]">
+          quick links
+        </section>
+        <div className="grid md:grid-cols-3 mt-[2rem] container mx-auto gap-10 px-10 lg:flex lg:justify-center ">
+          <div className="px-5 py-2 capitalize bg-white pb-10 md:h-[10rem] md:w-[15rem]">
+            <section className="flex gap-5">
+              <BiCreditCard size={30} color="orange" className="" />
+              <h2 className="text-blue-900/60 tracking-widest md:px-0 md:text-xl">
+                moneyWallet
+              </h2>
+            </section>
+            <p className="pl-12 px">
+              login to manage your Stanbic MoneyWallet multi-currency card
+            </p>
+          </div>
+
+          <div className="px-5 py-2 capitalize bg-white md:h-[10rem] md:w-[15rem]">
+            <section className="flex gap-5">
+              <BiCreditCard size={30} color="orange" className="" />
+              <h2 className="text-blue-900/60 tracking-widest md:px-0 md:text-xl">
+                corporate card
+              </h2>
+            </section>
+            <p className="pl-10 px">
+              login to manage your Stanbic corporate prepaid card
+            </p>
+          </div>
+
+          <div className="px-5 py-2 capitalize bg-white md:h-[10rem] md:w-[15rem]">
+            <section className="flex gap-5">
+              <HiOutlineArrowUpRight size={30} color="orange" className="" />
+              <h2 className="text-blue-900/60 tracking-widest md:px-0 md:text-xl">
+                e-levy
+              </h2>
+            </section>
+            <p className="pl-12 px">
+              login to manage your Stanbic corporate prepaid card
+            </p>
           </div>
         </div>
       </div>
