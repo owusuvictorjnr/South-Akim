@@ -9,7 +9,7 @@ import { AiOutlineCar } from 'react-icons/ai'
 import { LiaHomeSolid } from 'react-icons/lia'
 import { BiCreditCard } from 'react-icons/bi'
 import { HiChartBar } from 'react-icons/hi'
-import { BsShieldCheck } from 'react-icons/bs'
+import { BsCurrencyDollar, BsShieldCheck } from 'react-icons/bs'
 import { RxTriangleUp } from 'react-icons/rx'
 import { HiOutlineArrowUpRight } from 'react-icons/hi2'
 import Link from 'next/link'
@@ -159,6 +159,8 @@ const Root = () => {
               width="1000"
               className="h-[20rem] md:h-[26rem]"
             />
+
+            {/* TODO: text on the image */}
           </div>
 
           <div className="px-5 bg-blue-800 mx-5 text-white pt-10 pb-10">
@@ -239,7 +241,7 @@ const Root = () => {
           quick links
         </section>
         <div className="grid md:grid-cols-3 mt-[2rem] container mx-auto gap-10 px-10 lg:flex lg:justify-center ">
-          <div className="px-5 py-2 capitalize bg-white pb-10 md:h-[10rem] md:w-[15rem]">
+          <div className="px-5 py-2 capitalize shadow-md bg-white md:h-[10rem] md:w-[15rem]">
             <section className="flex gap-5">
               <BiCreditCard size={30} color="orange" className="" />
               <h2 className="text-blue-900/60 tracking-widest md:px-0 md:text-xl">
@@ -251,7 +253,7 @@ const Root = () => {
             </p>
           </div>
 
-          <div className="px-5 py-2 capitalize bg-white md:h-[10rem] md:w-[15rem]">
+          <div className="px-5 py-2 capitalize shadow-md bg-white md:h-[10rem] md:w-[15rem]">
             <section className="flex gap-5">
               <BiCreditCard size={30} color="orange" className="" />
               <h2 className="text-blue-900/60 tracking-widest md:px-0 md:text-xl">
@@ -263,7 +265,7 @@ const Root = () => {
             </p>
           </div>
 
-          <div className="px-5 py-2 capitalize bg-white md:h-[10rem] md:w-[15rem]">
+          <div className="px-5 py-2 capitalize shadow-md bg-white md:h-[10rem] md:w-[15rem]">
             <section className="flex gap-5">
               <HiOutlineArrowUpRight size={30} color="orange" className="" />
               <h2 className="text-blue-900/60 tracking-widest md:px-0 md:text-xl">
@@ -273,6 +275,57 @@ const Root = () => {
             <p className="pl-12 px">
               login to manage your Stanbic corporate prepaid card
             </p>
+          </div>
+        </div>
+
+        <div className="">
+          <div className="mt-10 container mx-auto flex justify-center px-[1rem]">
+            <Image
+              src="/imgs/pic3.jpg"
+              alt=""
+              height="1000"
+              width="1000"
+              className="h-[30rem]"
+            />
+
+            {/* TODO: text on the image */}
+          </div>
+
+          <section className="mt-10 px-10 font-bold text-black/70">
+            <h2 className="uppercase">rates</h2>
+          </section>
+
+          <div className="grid grid-cols-1 md:grid-cols-1 px-10">
+            <section className="mt-5">
+              <h3 className="text-black/50 text-sm md:text-xl lg:text-3xl">
+                View our daily Forex/Exchange Rates and monthly Bank of Ghana
+                Reference Rates
+              </h3>
+            </section>
+
+            <section className="mt-8  md:flex md:gap-10 lg:flex lg:justify-end lg:mt-0">
+              <div className="bg-white capitalize py-3 px-5 gap-5 shadow-lg md:flex-col flex md:h-[12rem] md:w-[15rem]">
+                <BsCurrencyDollar
+                  size="30"
+                  color="orange"
+                  className="md:flex md:justify-center "
+                />
+                <div className="pt-1  text-center text-blue-900/100 text-sm md:text-lg">
+                  daily forex rates
+                </div>
+              </div>
+
+              <div className="bg-white capitalize mt-3 py-3 px-5 gap-5 shadow-lg md:mt-0 md:flex-col flex md:h-[12rem] md:w-[15rem]">
+                <HiOutlineArrowUpRight
+                  size="30"
+                  color="orange"
+                  className="md:flex md:justify-center "
+                />
+                <div className="pt-1  text-center text-blue-900/100 text-sm md:text-lg">
+                  ghana reference rates
+                </div>
+              </div>
+            </section>
           </div>
         </div>
       </div>
