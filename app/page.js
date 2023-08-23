@@ -34,41 +34,60 @@ const Root = () => {
             ))}
           </Carousel>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 capitalize px-5 pt-8 text-sm md:pt-0 lg:grid-cols-4 md:bg-white">
-            <div className="bg-white px-2 py-2 flex items-center md:hover:text-white md:hover:bg-orange-400 duration-700 md:h-[10rem]">
-              <Link href="/" className="flex justify-center gap-5">
-                <FiFileText size={30} className="" />
-                <h3 className="hover:text-blue-500 pt-1 md:pt-0 md:hover:text-white md:text-xl">
-                  open an account
-                </h3>
-              </Link>
-            </div>
+          <div className="min-h-[15rem] grid grid-cols-1 gap-3 capitalize px-5 pt-8 text-sm  md:bg-white">
+            <div className="md:flex md:gap-5  md:justify-center lg:flex lg:justify-center">
+              <div className="bg-white capitalize mt-5 py-3 px-5 gap-5 flex  md:mt-0 md:hover:text-white md:hover:bg-orange-400 duration-700  md:flex-col  md:h-[8rem] md:w-[12rem] lg:h-[10rem] lg:w-[20rem]">
+                <Link
+                  href="open-acc"
+                  className="flex gap-5 md:flex md:flex-col"
+                >
+                  <div className="md:flex md:justify-center md:pt-5">
+                    <FiFileText size="30" color="" className="" />
+                  </div>
+                  <div className="pt-1 text-center hover:text-blue-900/100 text-sm md:hover:text-white md:text-lg">
+                    open an account
+                  </div>
+                </Link>
+              </div>
 
-            <div className="bg-white px-2 py-2 flex items-center md:hover:text-white md:hover:bg-orange-400 duration-700 md:h-[10rem]">
-              <Link href="/" className="flex justify-center gap-5">
-                <SlScreenDesktop size={30} className="" />
-                <h3 className="hover:text-blue-500 pt-1 md:pt-0 md:hover:text-white md:text-xl">
-                  online banking | login
-                </h3>
-              </Link>
-            </div>
+              <div className="bg-white capitalize mt-5 py-3 px-5 gap-5 flex  md:mt-0 md:hover:text-white md:hover:bg-orange-400 duration-700  md:flex-col  md:h-[8rem] md:w-[12rem] lg:h-[10rem] lg:w-[20rem]">
+                <Link
+                  href="online-banking"
+                  className="flex gap-5 md:flex md:flex-col"
+                >
+                  <div className="md:flex md:justify-center md:pt-5">
+                    <SlScreenDesktop size="30" color="" className="" />
+                  </div>
+                  <div className="pt-1  text-center hover:text-blue-900/100 text-sm md:hover:text-white md:text-lg">
+                    open an account
+                  </div>
+                </Link>
+              </div>
 
-            <div className="bg-white px-2 py-2 flex items-center md:hover:text-white md:hover:bg-orange-400 duration-700 md:h-[10rem]">
-              <Link href="/" className="flex justify-center gap-5">
-                <FiFileText size={30} className="" />
-                <h3 className="hover:text-blue-500 pt-1 md:pt-0 md:hover:text-white md:text-xl">
-                  sign an indemnity form
-                </h3>
-              </Link>
-            </div>
+              <div className="bg-white capitalize mt-5 py-3 px-5 gap-5 flex md:hover:text-white md:mt-0 md:hover:bg-orange-400 duration-700  md:flex-col  md:h-[8rem] md:w-[12rem] lg:h-[10rem] lg:w-[20rem]">
+                <Link
+                  href="open-acc"
+                  className="flex gap-5 md:flex md:flex-col"
+                >
+                  <div className="md:flex md:justify-center md:pt-5">
+                    <FiFileText size="30" color="" className="" />
+                  </div>
+                  <div className="pt-1  text-center hover:text-blue-900/100 text-sm md:hover:text-white md:text-lg">
+                    open an account
+                  </div>
+                </Link>
+              </div>
 
-            <div className="bg-white px-2 py-2 flex items-center md:hover:text-white md:hover:bg-orange-400 duration-700 md:h-[10rem]">
-              <Link href="/" className="flex justify-center gap-5">
-                <SlSettings size={30} className="" />
-                <h3 className="hover:text-blue-500 pt-1 md:pt-0 md:hover:text-white md:text-xl">
-                  self service
-                </h3>
-              </Link>
+              <div className="bg-white capitalize mt-5 py-3 px-5 gap-5 flex  md:mt-0 md:hover:text-white md:hover:bg-orange-400 duration-700  md:flex-col  md:h-[8rem] md:w-[12rem] lg:h-[10rem] lg:w-[20rem]">
+                <Link href="sign-in" className="flex gap-5 md:flex md:flex-col">
+                  <div className="md:flex md:justify-center md:pt-5">
+                    <SlSettings size="30" color="" className="" />
+                  </div>
+                  <div className="pt-1  text-center hover:text-blue-900/100 text-sm md:hover:text-white md:text-lg">
+                    self service
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
@@ -87,67 +106,60 @@ const Root = () => {
         </div>
 
         <div className="grid grid-cols-1 pt-8 px-5 gap-5 md:grid-cols-3 lg:grid-cols-6 lg:flex lg:justify-center ">
-          <div className="bg-white capitalize gap-2 px-5 py-3 flex items-center md:h-[10rem] lg:w-[15rem] lg:h-[15rem] lg:hoease-out  ">
-            <div className="">
-              <Link href="bank-account" className="flex gap-3">
-                <FiFileText size={30} color="orange" className="" />
-                <h1 className="text-sm md:text-xl pt-2 md:pt-0">
-                  bank accounts
-                </h1>
-              </Link>
-            </div>
-          </div>
+          <Link href="bank-account" className="">
+            <div className="bg-white capitalize gap-2 px-5 py-3 shadow-lg flex items-center md:flex md:flex-col md:pt-10 md:h-[10rem] lg:w-[12rem] lg:h-[10rem] lg:hoease-out  ">
+              <FiFileText size={35} color="orange" className="" />
 
-          <div className="bg-white capitalize gap-2 px-5 py-3 flex items-center md:h-[10rem] lg:w-[15rem] lg:h-[15rem] ">
-            <div className="">
-              <Link href="bank-account" className="flex gap-3">
-                <AiOutlineCar size={30} color="orange" className="" />
-                <h1 className="text-sm md:text-xl pt-2 md:pt-0">
-                  vehicle and personal loans
-                </h1>
-              </Link>
+              <h1 className="text-sm text-blue-900/90 md:text-xl pt-1 md:pt-0">
+                bank accounts
+              </h1>
             </div>
-          </div>
+          </Link>
 
-          <div className="bg-white capitalize gap-2 px-5 py-3 flex items-center md:h-[10rem] lg:w-[15rem] lg:h-[15rem] ">
-            <div className="">
-              <Link href="bank-account" className="flex gap-3">
-                <LiaHomeSolid size={30} color="orange" className="" />
-                <h1 className="text-sm md:text-xl pt-2 md:pt-0">home loans</h1>
-              </Link>
+          <Link href="bank-account" className="">
+            <div className="bg-white capitalize gap-2 px-5 py-3 shadow-lg flex items-center md:flex md:flex-col md:pt-10 md:h-[10rem] lg:w-[12rem] lg:h-[10rem] ">
+              <AiOutlineCar size={35} color="orange" className="" />
+              <h1 className="text-sm text-blue-900 md:text-xl pt-2 md:pt-0">
+                vehicle and personal loans
+              </h1>
             </div>
-          </div>
+          </Link>
 
-          <div className="bg-white capitalize gap-2 px-5 py-3 flex items-center md:h-[10rem] lg:w-[15rem] lg:h-[15rem] ">
-            <div className="">
-              <Link href="bank-account" className="flex gap-3">
-                <BiCreditCard size={30} color="orange" className="" />
-                <h1 className="text-sm md:text-xl pt-2 md:pt-0">
-                  credit cards
-                </h1>
-              </Link>
+          <Link href="bank-account" className="">
+            <div className="bg-white capitalize gap-2 px-5 py-3 shadow-lg flex items-center md:flex md:flex-col md:pt-10 md:h-[10rem] lg:w-[12rem] lg:h-[10rem] ">
+              <LiaHomeSolid size={35} color="orange" className="" />
+              <h1 className="text-sm text-blue-900 md:text-xl pt-2 md:pt-0">
+                home loans
+              </h1>
             </div>
-          </div>
+          </Link>
 
-          <div className="bg-white capitalize gap-1 px-5 py-3 flex items-center md:h-[10rem] lg:w-[15rem] lg:h-[15rem] ">
-            <div className="">
-              <Link href="bank-account" className="flex gap-3">
-                <HiChartBar size={30} color="orange" className="" />
-                <h1 className="text-sm md:text-lg pt-2 md:pt-0">
-                  savings and investments
-                </h1>
-              </Link>
+          <Link href="bank-account" className="">
+            <div className="bg-white capitalize gap-2 px-5 py-3 shadow-lg flex items-center md:flex md:flex-col md:pt-10 md:h-[10rem] lg:w-[12rem] lg:h-[10rem] ">
+              <BiCreditCard size={35} color="orange" className="" />
+              <h1 className="text-sm text-blue-900 md:text-xl pt-2 md:pt-0">
+                credit cards
+              </h1>
             </div>
-          </div>
+          </Link>
 
-          <div className="bg-white capitalize gap-2 px-5 py-3 flex items-center md:h-[10rem] lg:w-[15rem] lg:h-[15rem] ">
-            <div className="">
-              <Link href="bank-account" className="flex gap-3">
-                <BsShieldCheck size={30} color="orange" className="" />
-                <h1 className="text-sm md:text-xl pt-2 md:pt-0">insurance</h1>
-              </Link>
+          <Link href="bank-account" className="">
+            <div className="bg-white capitalize gap-1 px-5 py-3 shadow-lg flex items-center md:flex md:flex-col md:pt-10 md:h-[10rem] lg:w-[12rem] lg:h-[10rem] ">
+              <HiChartBar size={35} color="orange" className="" />
+              <h1 className="text-sm text-blue-900 md:text-lg pt-2 md:pt-0">
+                savings and investments
+              </h1>
             </div>
-          </div>
+          </Link>
+
+          <Link href="bank-account" className="">
+            <div className="bg-white capitalize gap-2 px-5 py-3 shadow-lg flex items-center md:flex md:flex-col md:pt-10 md:h-[10rem] lg:w-[12rem] lg:h-[10rem] ">
+              <BsShieldCheck size={35} color="orange" className="" />
+              <h1 className="text-sm text-blue-900 md:text-xl pt-2 md:pt-0">
+                insurance
+              </h1>
+            </div>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 px-5 mt-5 bg-blue-800">
@@ -237,7 +249,7 @@ const Root = () => {
         </div>
 
         {/* Quick links */}
-        <section className="uppercase font-bold mt-10 px-10 container md:pl-[8rem] lg:pl-[35rem]">
+        {/* <section className="uppercase font-bold mt-10 px-10 container md:pl-[8rem] lg:pl-[35rem]">
           quick links
         </section>
         <div className="grid md:grid-cols-3 mt-[2rem] container mx-auto gap-10 px-10 lg:flex lg:justify-center ">
@@ -276,56 +288,69 @@ const Root = () => {
               login to manage your Stanbic corporate prepaid card
             </p>
           </div>
-        </div>
+        </div> */}
 
         <div className="">
-          <div className="mt-10 container mx-auto flex justify-center px-[1rem]">
+          <div className="mt-10  mx-auto  px-[1rem]">
             <Image
               src="/imgs/pic3.jpg"
               alt=""
               height="1000"
               width="1000"
-              className="h-[30rem]"
+              className="h-[30rem] w-full lg:h-[40rem]"
             />
 
             {/* TODO: text on the image */}
           </div>
 
-          <section className="mt-10 px-10 font-bold text-black/70">
-            <h2 className="uppercase">rates</h2>
-          </section>
-
-          <div className="grid grid-cols-1 md:grid-cols-1 px-10">
-            <section className="mt-5">
-              <h3 className="text-black/50 text-sm md:text-xl lg:text-3xl">
-                View our daily Forex/Exchange Rates and monthly Bank of Ghana
-                Reference Rates
-              </h3>
+          {/* Rates */}
+          <div className="">
+            <section className="mt-5 px-5 font-bold text-black/70">
+              <h2 className="uppercase lg:pl-[26.5rem]">rates</h2>
             </section>
 
-            <section className="mt-8  md:flex md:gap-10 lg:flex lg:justify-end lg:mt-0">
-              <div className="bg-white capitalize py-3 px-5 gap-5 shadow-lg md:flex-col flex md:h-[12rem] md:w-[15rem]">
-                <BsCurrencyDollar
-                  size="30"
-                  color="orange"
-                  className="md:flex md:justify-center "
-                />
-                <div className="pt-1  text-center text-blue-900/100 text-sm md:text-lg">
-                  daily forex rates
-                </div>
-              </div>
+            <div className="px-5 lg:container lg:mx-auto">
+              <section className="grid grid-cols-1 md:grid-cols-1  lg:flex lg:justify-end lg:mt-0">
+                <section className="mt-4 lg:px-[15rem]">
+                  <h3 className="text-black/50 text-sm md:text-xl lg:text-3xl">
+                    View our daily Forex/Exchange Rates and monthly Bank of
+                    Ghana Reference Rates
+                  </h3>
+                </section>
 
-              <div className="bg-white capitalize mt-3 py-3 px-5 gap-5 shadow-lg md:mt-0 md:flex-col flex md:h-[12rem] md:w-[15rem]">
-                <HiOutlineArrowUpRight
-                  size="30"
-                  color="orange"
-                  className="md:flex md:justify-center "
-                />
-                <div className="pt-1  text-center text-blue-900/100 text-sm md:text-lg">
-                  ghana reference rates
+                <div className="md:flex md:gap-5">
+                  <Link href="daily-forex" className="">
+                    <div className="bg-white capitalize mt-5 py-3 px-5 gap-5 shadow-lg md:flex-col flex md:h-[12rem] md:w-[15rem]">
+                      <div className="md:flex md:justify-center md:pt-10">
+                        <BsCurrencyDollar
+                          size="30"
+                          color="orange"
+                          className=""
+                        />
+                      </div>
+                      <div className="pt-1  text-center text-blue-900/100 text-sm md:text-lg">
+                        daily forex rates
+                      </div>
+                    </div>
+                  </Link>
+
+                  <Link href="daily-forex" className="">
+                    <div className="bg-white capitalize mt-5 py-3 px-5 gap-5 shadow-lg  md:flex-col flex md:h-[12rem] md:w-[15rem]">
+                      <div className="md:flex md:justify-center md:pt-10">
+                        <HiOutlineArrowUpRight
+                          size="30"
+                          color="orange"
+                          className=" "
+                        />
+                      </div>
+                      <div className="pt-1  text-center text-blue-900/100 text-sm md:text-lg">
+                        ghana reference rates
+                      </div>
+                    </div>
+                  </Link>
                 </div>
-              </div>
-            </section>
+              </section>
+            </div>
           </div>
         </div>
       </div>
