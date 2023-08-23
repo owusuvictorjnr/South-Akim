@@ -9,7 +9,7 @@ const NavBar = () => {
     <>
       <div className="fixed z-20 top-0 left-0 right-0">
         {/* Nav bar 1 */}
-        <div className="h-[5rem] bg-white">
+        {/* <div className="h-[5rem] bg-white">
           <div className="flex justify-between text-sm mx-auto px-[5rem] pt-4 lg:flex lg:justify-evenly">
             <div className="px-5 capitalize md:px-0">
               <ul className="flex gap-2 lg:gap-10">
@@ -66,7 +66,7 @@ const NavBar = () => {
               </ul>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Navbar 2 */}
         <div className="h-[5rem] bg-blue-800">
